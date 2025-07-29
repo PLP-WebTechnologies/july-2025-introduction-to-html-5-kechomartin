@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple HTML5 page demonstrating accessibility and SEO best practices.">
+  <meta name="keywords" content="HTML5, accessibility, SEO, semantic HTML, web design basics">
+  <meta name="author" content="Your Name">
+  <title>Martin's Assignment</title>
+</head>
+<body>
+  <!-- Header with main site identity -->
+  <header>
+    <h1>Welcome to My Web Page</h1>
+    <p>This is what I have learnt and I am open to learning more .</p>
+  </header>
+
+  <!-- Navigation Landmark -->
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>This web page is created by html </p>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" aria-labelledby="articles-heading">
+      <h2 id="articles-heading">Featured Articles</h2>
+
+      <article>
+        <h3>The importance of HTML</h3>
+        <p>Html makes it possible to build web pages <p>
+      </article>
+
+      <article>
+        <h3>Accessibility for All Users</h3>
+        <p>The various elements allow for easier better productivity .</p>
+      </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <p>If you’d like to get in touch, please send me an  email to <a href="#">example@example.com</a>.</p>
+      <address>
+        Written by <strong>Martin Kecho</strong><br>
+      </address>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; All rights reserved</p>
+  </footer>
+</body>
+</html>
